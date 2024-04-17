@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_location2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_weight="11"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="实时定位"
+            android:gravity="center_horizontal|center_vertical" />
+        <Button
+            android:id="@+id/bt_location"
+            android:visibility="invisible"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:text="保存"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" />
+        <Button
+            android:id="@+id/load"
+            android:layout_width="match_parent"
+            android:text="加载"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

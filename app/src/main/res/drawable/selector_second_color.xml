@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    //代码设置着色，是为了让深色模式的选中 tab颜色变成紫色 但是发现使用属性的话永远是默认主题的颜色-->
+    <item android:color="#ff00ff" android:state_checked="true" />
+    <item android:color="#999" android:state_checked="false"/>
+</selector>

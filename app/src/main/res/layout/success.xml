@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:text="恭喜您回答正确!
+请记住这5个词语，稍后需要您再重新回忆一遍!\n\n
+接下来您需要在百货商场中找到指
+定的商品，共有4种不同的分类布
+局，每种分类布局下需要找到5个商
+品。
+准备好之后请点击下方“开始”按
+钮开始测试。"
+            android:gravity="center"
+            android:lineHeight="30dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="40dp"
+            android:id="@+id/tv"/>
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        android:background="@drawable/background_corner"
+        android:layout_marginTop="20dp"
+        android:text="开始"/>
+</LinearLayout>

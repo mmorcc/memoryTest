@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_location2"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/title22"
+            android:layout_width="wrap_content"
+            android:layout_weight="11"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:text="Expert-MogenGPT EA"
+            android:gravity="center_horizontal|center_vertical" />
+        <Button
+            android:id="@+id/bt_location"
+            android:visibility="invisible"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/navigation_bottom"
+    android:layout_width="match_parent"
+    app:labelVisibilityMode="labeled"
+    android:layout_height="wrap_content"
+    app:itemIconSize="1dp"
+    app:menu="@menu/menu_navigation"
+    android:background="?android:attr/windowBackground"/>
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>

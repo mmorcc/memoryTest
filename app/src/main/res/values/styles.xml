@@ -1,0 +1,69 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="ResultButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="ShareButton" parent="@android:style/Widget.Holo.Button.Borderless.Small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@drawable/dialogshape</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+    <!--没有选中的样式-->
+    <style name="bottom_normal_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--选中的样式-->
+    <style name="bottom_selected_text">
+        <item name="android:textColor">@color/fragment__color5</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+<!--    <style name="Theme.DialogActivity" parent="Theme.AppCompat.Light.Dialog">-->
+<!--        <item name="android:windowBackground">@drawable/backbg</item>-->
+<!--        <item name="android:colorBackground">#eeffee</item>-->
+<!--        <item name="android:windowTitleStyle">@style/WindowTitle</item>-->
+<!--        <item name="background">@android:color/white</item>-->
+<!--        <item name="android:actionBarStyle">@style/CustomActionBar</item>-->
+<!--        <item name="android:windowTitleBackgroundStyle">@style/CustomActionBar </item>-->
+
+
+<!--        <item name="android:windowActionBar">false</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+<!--    <style name="CustomActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">-->
+<!--        &lt;!&ndash; 修改 ActionBar 的背景颜色为红色 &ndash;&gt;-->
+<!--        <item name="android:background">#FF0000</item>-->
+<!--    </style>-->
+<!--    <style name="WindowTitle" parent="android:TextAppearance.WindowTitle">-->
+<!--        <item name="android:singleLine">true</item>-->
+<!--        <item name="background">@android:color/white</item>-->
+<!--    </style>-->
+</resources>

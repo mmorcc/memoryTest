@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:circletimerview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:background="@drawable/background_gray_round">
+    <LinearLayout
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_yellow_round"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ll1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            
+            android:layout_gravity="center"
+            android:text="btn_ok"
+            android:src="@drawable/play"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            
+            android:textSize="13sp"
+            android:text="手机版EA"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ll2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            
+            android:layout_gravity="center"
+            android:text="btn_ok"
+            android:src="@drawable/exit"/>
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            
+            android:textSize="14sp"
+            
+            android:text="保存退出"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+          android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ll3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="btn_ok"
+            android:src="@drawable/exitfullscreen"/>
+        <TextView
+            android:id="@+id/tvs"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            
+            android:textSize="14sp"
+            
+            android:text="最小化"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal">
+        <com.org.myapplication.compenents.CircleTimerView
+            android:layout_alignParentRight="true"
+            android:id="@+id/circle_timer"
+
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            circletimerview:solid_circle_radius = "30dp"
+            circletimerview:empty_circle_radius = "40dp"
+            circletimerview:solid_circle_color = "@color/white"
+            circletimerview:empty_circle_color = "#883F51B5"
+            circletimerview:circle_text_color = "@android:color/holo_blue_bright"
+            circletimerview:circle_text_size = "62sp"
+            circletimerview:circle_draw_orientation = "anticlockwise"
+            circletimerview:time_length = "3"
+            />
+        <ImageView
+          android:layout_width="match_parent"
+        android:layout_height="60dp"
+            android:layout_gravity="center"
+        android:text="btn_ok"
+        android:src="@drawable/callready"
+        android:id="@+id/call"/>
+    </FrameLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        
+        android:text="按下呼叫"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/state_tv"/>
+    <ListView
+        android:id="@+id/list"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
